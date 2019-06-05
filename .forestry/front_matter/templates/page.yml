@@ -6,6 +6,21 @@ fields:
 - type: text
   name: title
   label: Title
+  config:
+    required: true
 - type: datetime
   name: date
   label: Date
+  config:
+    required: true
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: This is a custom description for SEO and Open Graph purposes, rather
+    than the default generated excerpt. Simply add a description field to the frontmatter.
