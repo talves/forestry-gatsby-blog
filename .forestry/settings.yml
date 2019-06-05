@@ -4,23 +4,15 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: content/blog
-  label: Posts
-  create: documents
-  match: "**/*"
-  new_doc_ext: md
 - type: document
   path: src/data/main_menu.json
   label: Menu
 - type: directory
-  path: src/pages
-  label: Pages
-  create: documents
+  path: content/blog
+  label: Blog
+  create: all
   match: "**/*.md"
   new_doc_ext: md
-  templates:
-  - page
 - type: document
   path: src/data/bio.json
   label: Bio
