@@ -8,8 +8,10 @@ sections:
   path: content/blog
   label: Blog
   create: all
-  match: "**/*.md"
+  match: "**/index.md"
   new_doc_ext: md
+  templates:
+  - page
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
