@@ -9,7 +9,7 @@ sections:
   label: Blog
   create: all
   match: "**/index.md"
-  new_doc_ext: md
+  new_doc_ext: ''
   templates:
   - page
 upload_dir: static/uploads
