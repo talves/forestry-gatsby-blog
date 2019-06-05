@@ -1,0 +1,22 @@
+---
+label: Bio
+hide_body: true
+is_partial: false
+fields:
+- name: name
+  label: Name
+  type: text
+  hidden: false
+  default: ''
+- type: file
+  name: profilePic
+  label: Profile Pic
+- type: textarea
+  name: bio
+  label: Bio
+  config:
+    wysiwyg: true
+    schema:
+      format: html
+pages:
+- src/data/bio.json

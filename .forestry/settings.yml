@@ -1,0 +1,27 @@
+new_page_extension: md
+auto_deploy: false
+admin_path:
+webhook_url:
+sections:
+  - type: directory
+    path: src/pages
+    label: Pages
+    create: documents
+    match: '**/*.md'
+    new_doc_ext: md
+    templates:
+      - page
+  - type: document
+    path: src/data/bio.json
+    label: Bio
+  - type: document
+    path: settings.json
+    label: Site Settings
+upload_dir: static/uploads
+public_path: '/uploads'
+front_matter_path: '/uploads'
+use_front_matter_path: false
+file_template: ':filename:'
+build:
+  preview_command: npm run build
+  output_directory: public
