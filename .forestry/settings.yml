@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: content/data/settings.json
+  label: Settings
+  match: "**/*"
 - type: directory
   path: content/blog
   label: Blog
