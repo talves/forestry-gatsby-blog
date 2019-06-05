@@ -5,11 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: src/pages/posts
+  path: content/blog
   label: Posts
   create: documents
-  match: "**/*.md"
-  new_doc_ext: ".md"
+  match: "**/*"
+  new_doc_ext: md
 - type: document
   path: src/data/main_menu.json
   label: Menu
