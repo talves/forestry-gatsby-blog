@@ -4,21 +4,12 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: src/data/main_menu.json
-  label: Menu
 - type: directory
   path: content/blog
   label: Blog
   create: all
   match: "**/*.md"
   new_doc_ext: md
-- type: document
-  path: src/data/bio.json
-  label: Bio
-- type: document
-  path: settings.json
-  label: Site Settings
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
